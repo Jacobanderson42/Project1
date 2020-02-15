@@ -25,11 +25,12 @@ Observatories Initiative. This code takes an input in the form of a CSV file tha
 This data is then analyzed and the necessary information is extracted from the CSV file that has been uploaded. One the data is
 imported the calculation for speed of sound is done using the temperature, salinity, and depth data. The data is then separated 
 into dives based on the change in depth of the CTD. With the index of each dive start and end, the dives are then plotted on the 
-same axes. If it multiple dives are available, then the first and last dives are plotted to see the change in the speed of sound
-profile over the course of the day. The data is then fit with a curve in order to make a smooth speed of sound profile for each 
-location over the day. This allows for the analysis of the speed of sound at a given location for use in calculations.
-	
-The graphs of the data for each of the 7 arrays can be seen below for the summer and winter seasons.
+same axes. The data is then separated by its time into two categories, one for daytime and one for nighttime. This is based 
+on the time for sunrise and sunset at that location. The data is then averaged by dividing up the depth into equal sections 
+and finding all speed of sound values that correspond with depths within that range. This allows for the analysis of the speed 
+of sound at a given location for use in calculations. The graphs of the data for each of the 7 arrays can be seen below for the 
+summer and winter seasons.
+
 # Graphs for each dive:
 ![](https://github.com/Jacobanderson42/Project1/blob/master/Images/Dives/AxialDeep_Summer_Dives.png)
 ![](https://github.com/Jacobanderson42/Project1/blob/master/Images/Dives/AxialDeep_Winter_Dives.png)
